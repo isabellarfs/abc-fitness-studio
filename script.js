@@ -9,7 +9,7 @@ let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
 function addToCart(item) {
 cart.push(item);
 sessionStorage.setItem("cart", JSON.stringify(cart));
-alert("Item added to the cart.");
+alert("Item added to cart.");
 }
 
 // VIEW CART
