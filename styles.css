@@ -1,48 +1,168 @@
+/* GENERAL BODY */
+
 body {
-font-family: Arial, sans-serif;
+font-family: Calibri, Arial, sans-serif;
+font-size: 16px;
+color: #00231C;
 margin: 0;
 background-color: #f4f4f4;
+line-height: 1.6;
 }
 
+
+/* TYPOGRAPHY */
+
+/* Display */
+h1 {
+font-family: "Trebuchet MS", sans-serif;
+font-weight: bold;
+font-size: 40px;
+color: #00231C;
+}
+
+/* Title Large */
+h2 {
+font-family: "Times New Roman", serif;
+font-weight: bold;
+font-size: 30px;
+color: #00231C;
+}
+
+/* Title */
+h3 {
+font-family: Impact, sans-serif;
+font-size: 25px;
+color: #00231C;
+}
+
+/* Subtitle */
+h4 {
+font-family: "Comic Sans MS", cursive;
+font-size: 15px;
+color: #00231C;
+}
+
+/* Body Large */
+.body-large {
+font-family: Calibri, sans-serif;
+font-size: 20px;
+}
+
+/* Body Strong */
+strong {
+font-family: Roboto, sans-serif;
+font-weight: bold;
+font-size: 16px;
+}
+
+/* Caption */
+.caption {
+font-family: Comfortaa, sans-serif;
+font-size: 11px;
+}
+
+
+/* HEADER */
+
 header {
-background-color: #0b1b33;
+background-color: #00231C;
 color: white;
-padding: 20px;
+padding: 25px;
 text-align: center;
+}
+
+
+/* NAVIGATION */
+
+nav {
+margin-top: 10px;
 }
 
 nav a {
 color: white;
 text-decoration: none;
-margin: 0 10px;
+margin: 0 12px;
 font-weight: bold;
+font-size: 16px;
 }
+
+nav a:hover {
+text-decoration: underline;
+}
+
+
+/* MAIN CONTENT */
 
 main {
-padding: 20px;
+padding: 30px;
+max-width: 1000px;
+margin: auto;
 }
 
-.class-card {
-margin-bottom: 30px;
-}
+
+/* BUTTONS */
 
 button {
-background-color: #2d4a7c;
+background-color: #00231C;
 color: white;
 border: none;
-padding: 10px 15px;
-border-radius: 5px;
+padding: 10px 16px;
+margin-top: 8px;
+border-radius: 6px;
 cursor: pointer;
+font-size: 14px;
 }
 
 button:hover {
-background-color: #1f3560;
+opacity: 0.85;
 }
 
+
+/* GALLERY GRID LAYOUT */
+
+.gallery-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px;
+margin-top: 30px;
+}
+
+
+/* CLASS CARD */
+
+.class-card {
+background-color: white;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+text-align: center;
+}
+
+.class-card img {
+width: 100%;
+border-radius: 8px;
+margin-bottom: 10px;
+}
+
+
+/* CART BUTTONS AREA */
+
+.cart-controls {
+margin-bottom: 20px;
+}
+
+.cart-controls button {
+margin-right: 10px;
+}
+
+
+/* FOOTER */
+
 footer {
-background-color: #0b1b33;
+background-color: #00231C;
 color: white;
 text-align: center;
-padding: 15px;
-margin-top: 30px;
+padding: 20px;
+margin-top: 40px;
+font-size: 14px;
 }
