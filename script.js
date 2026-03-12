@@ -14,7 +14,6 @@ alert("Item added to the cart.");
 
 // VIEW CART
 function viewCart() {
-
 let cartItems = JSON.parse(sessionStorage.getItem("cart")) || [];
 let display = document.getElementById("cartDisplay");
 
@@ -24,7 +23,6 @@ display.innerHTML = "Your cart is empty.";
 else{
 display.innerHTML = "Items in cart: " + cartItems.join(", ");
 }
-
 }
 
 // CLEAR CART
