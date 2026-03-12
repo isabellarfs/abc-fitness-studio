@@ -19,13 +19,16 @@ font-weight: bold;
 font-size: 40px;
 color: #17253F;
 }
+header h1 {
+color: white;
+}
 
 /* Title Large */
 h2 {
 font-family: "Times New Roman", serif;
 font-weight: bold;
 font-size: 30px;
-color: #00231C;
+color: #17253F;
 }
 
 /* Title */
@@ -122,26 +125,26 @@ opacity: 0.85;
 
 .gallery-container {
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: 1fr 1fr 1fr;
 gap: 40px;
+justify-items: center;
 margin-top: 30px;
 }
-
 
 /* CLASS CARD */
 
 .class-card {
 background-color: white;
 padding: 20px;
-border-radius: 10px;
-box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 text-align: center;
-width: 100%;
+width: 260px;
 }
 
 .class-card img {
 width: 100%;
-height: 180px;
+height: 160px;
 object-fit: cover;
 border-radius: 8px;
 margin-bottom: 10px;
