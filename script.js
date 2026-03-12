@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function subscribe() {
 alert("Thank you for subscribing.");
 }
@@ -35,4 +36,24 @@ function saveFeedback() {
 let message = document.getElementById("message").value;
 localStorage.setItem("customerFeedback", message);
 alert("Thank you for your message.");
+=======
+function subscribe() {
+alert("Thank you for subscribing.");
+}
+
+function addToCart() {
+alert("Item added to the cart.");
+}
+
+function clearCart() {
+alert("Cart cleared.");
+}
+
+function processOrder() {
+alert("Thank you for your order.");
+}
+
+function submitForm() {
+alert("Thank you for your message.");
+>>>>>>> 04a740e818d07f553ae1b842ff26337951004d86
 }
