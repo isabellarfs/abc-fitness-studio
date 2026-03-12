@@ -30,8 +30,15 @@ function addToCart(item) {
 
 // VIEW CART
 function viewCart() {
-    let cartItems = JSON.parse(sessionStorage.getItem("cart")) || [];
-    alert("Items in cart: " + cartItems.join(", "));
+let cartItems = JSON.parse(sessionStorage.getItem("cart")) || [];
+
+let display = document.getElementById("cartDisplay");
+
+if(cartItems.length === 0){
+display.innerHTML = "Your cart is empty.";
+}
+else{
+display.innerHTML = "Items in cart: " + cartItems.join(", ");
 }
 
 // CLEAR CART

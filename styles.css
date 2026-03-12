@@ -102,3 +102,9 @@ display:block;
 margin:20px auto;
 border-radius:10px;
 }
+
+#cartDisplay{
+margin-top:15px;
+font-weight:bold;
+color:#333;
+}
