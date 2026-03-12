@@ -39,3 +39,26 @@ function processOrder() {
 alert("Thank you for your order!");
 sessionStorage.removeItem("cart");
 }
+
+// CUSTOMER FEEDBACK
+function saveFeedback() {
+
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+let phone = document.getElementById("phone").value;
+let message = document.getElementById("message").value;
+
+let feedback = {
+name: name,
+email: email,
+phone: phone,
+message: message
+};
+
+localStorage.setItem("customerFeedback", JSON.stringify(feedback));
+
+alert("Thank you for your message!");
+
+document.getElementById("feedbackForm").reset();
+
+}

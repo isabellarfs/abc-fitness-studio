@@ -153,3 +153,20 @@ padding: 25px;
 margin-top: 60px;
 font-size: 14px;
 }
+
+/* SCHEDULE TABLE */
+
+table {
+margin: auto;
+border-collapse: collapse;
+}
+
+th, td {
+padding: 10px 15px;
+border: 1px solid #ccc;
+text-align: center;
+}
+
+.schedule-section {
+text-align: center;
+}
