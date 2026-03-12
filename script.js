@@ -14,7 +14,7 @@ alert("Item added to cart.");
 
 // VIEW CART
 function viewCart() {
-let cartItems = JSON.parse(sessionStorage.getItem("cart")) || [];
+let cartItems = JSON.parse(sessionStorage.getItem("cart")) || {};
 let display = document.getElementById("cartDisplay");
 
 if(cartItems.length === 0){
