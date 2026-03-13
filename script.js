@@ -57,11 +57,28 @@ message: message
 
 localStorage.setItem("customerFeedback", JSON.stringify(feedback));
 
-alert("Thank you for your message!");
-
-document.getElementById("feedbackMessage").innerHTML =
-"Thank you! Your feedback has been saved.";
+displayFeedback();
 
 document.getElementById("feedbackForm").reset();
 
 }
+
+function displayFeedback(){
+
+let storedFeedback = localStorage.getItem("customerFeedback");
+
+if(storedFeedback){
+
+let feedback = JSON.parse(storedFeedback);
+
+document.getElementById("feedbackDisplay").innerHTML =
+"<p><strong>Name:</strong> " + feedback.name + "</p>" +
+"<p><strong>Email:</strong> " + feedback.email + "</p>" +
+"<p><strong>Phone:</strong> " + feedback.phone + "</p>" +
+"<p><strong>Message:</strong> " + feedback.message + "</p>";
+
+}
+
+}
+
+window.onload = displayFeedback;
