@@ -1,3 +1,7 @@
+function joinNow() {
+alert("Welcome to ABC Fitness Studio! Please visit the About page to contact us and start your membership.");
+}
+
 function subscribe() {
 alert("Thank you for subscribing.");
 }
