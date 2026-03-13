@@ -59,6 +59,9 @@ localStorage.setItem("customerFeedback", JSON.stringify(feedback));
 
 alert("Thank you for your message!");
 
+document.getElementById("feedbackMessage").innerHTML =
+"Thank you! Your feedback has been saved.";
+
 document.getElementById("feedbackForm").reset();
 
 }
